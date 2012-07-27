@@ -34,14 +34,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export LC_NUMERIC=POSIX
 
-export GOROOT=$HOME/tools/go
-export GOARCH=amd64
-export GOOS=freebsd
-export PATH=$GOROOT/bin:$PATH
-export TMPDIR=~/st/tmp
-
 [ ! -d $HOME/bin ] || export PATH=$HOME/bin:$PATH
-[ ! -d $HOME/fp/mr_helpers ] || export MRHELPERS_PATH=$HOME/fp/mr_helpers:$MRHELPERS_PATH
 
 alias ls='ls -G'
 alias grep='grep --color=auto'
