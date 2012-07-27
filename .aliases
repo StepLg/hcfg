@@ -1,0 +1,10 @@
+
+alias ls='ls -G'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias tawk="awk -v OFS='\t' -F'\t'"
+alias screen='screen -U'
+alias heasy_install='easy_install -U -s ~/bin -d ~/.local/lib/python2.6/site-packages/'
+alias tmux='TERM=xterm-256color tmux -u -2'
+

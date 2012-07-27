@@ -36,27 +36,8 @@ export LC_NUMERIC=POSIX
 
 [ ! -d $HOME/bin ] || export PATH=$HOME/bin:$PATH
 
-alias ls='ls -G'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias tawk="awk -v OFS='\t' -F'\t'"
-alias screen='screen -U'
-alias heasy_install='easy_install -U -s ~/bin -d ~/.local/lib/python2.6/site-packages/'
-alias tmux='TERM=xterm-256color tmux -u'
-
 # automatically remove duplicates from these arrays
 typeset -U path cdpath fpath manpath
-
-alias ls='ls -G'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
-alias tawk="awk -v OFS='\t' -F'\t'"
-alias screen='screen -U'
-alias heasy_install='easy_install -U -s ~/bin -d ~/.local/lib/python2.6/site-packages/'
-alias tmux='TERM=xterm-256color tmux -u'
-alias mlog='clear; tail -n 100 -f '
 
 ## файл истории команд
 ## если не указан, история не будет сохраняться
@@ -156,4 +137,9 @@ PROMPT="${blue_zd}${user_host}${PR_BLUE}─[$PR_NO_COLOUR%B%*%b${PR_BLUE}]─$PR
 ${blue_zu}$PR_BLUE%#$PR_NO_COLOUR "
 # RPROMPT="%B%*%b"
 
+
+# Alias definitions.
+if [ -f ~/.aliases ]; then
+    . ~/.aliases
+fi
 
