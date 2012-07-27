@@ -1,0 +1,15 @@
+.*
+*.pyc
+*.[ao]
+*.lo
+*.so
+~*
+build
+dist
+bin
+obj
+_obj
+*.[68]
+_cgo*
+*.cgo1.go
+*.cgo2.c

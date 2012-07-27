@@ -1,0 +1,16 @@
+[user]
+	name = Stephan Kountso
+	email = steplg@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	co = checkout
+	ci = commit
+	up = remote update
+	st = status
+	br = branch
+	glog = log --branches --graph --decorate=short
+[core]
+	excludesfile = /home/steplg/.gitignore_global
