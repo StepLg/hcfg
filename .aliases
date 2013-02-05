@@ -1,8 +1,8 @@
 
 alias ls='ls -G --color'
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+alias grep='grep --color=always'
+alias fgrep='fgrep --color=always'
+alias egrep='egrep --color=always'
 alias tawk="awk -v OFS='\t' -F'\t'"
 alias screen='screen -U'
 alias heasy_install='easy_install -U -s ~/bin -d ~/.local/lib/python2.6/site-packages/'
