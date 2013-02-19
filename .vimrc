@@ -9,7 +9,7 @@ filetype plugin on
 set tabstop=4 
 set shiftwidth=4
 set smarttab
-set expandtab "Ставим табы пробелами
+set noexpandtab "Ставим табы пробелами
 set softtabstop=4 "4 пробела в табе
 "Автоотступ
 set autoindent
@@ -55,8 +55,8 @@ set foldcolumn=1
 set showmatch
 
 " Show invisible characters but no end of line, show trailing spaces as '.'
-set list
-set listchars=trail:.
+" set list
+" set listchars=trail:.
 
 "Переносим на другую строчку, разрываем строки
 set wrap
@@ -117,4 +117,45 @@ map! <F2> <ESC>:w<CR>i<right>
 " Switch between .h and .cpp files using a.vim on F3
 map <F3> :w<CR>:A<CR>
 map! <F3> <ESC>:w<CR>:A<CR>
+
+"
+" Confiburing vundle
+"
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-rails.git'
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+" ...
+
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'yandy/vim-omnicppcomplete'
+
+
+filetype plugin indent on     " required!
+"
+" Brief help
+" :BundleList          - list configured bundles
+" :BundleInstall(!)    - install(update) bundles
+" :BundleSearch(!) foo - search(or refresh cache first) for foo
+" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Bundle command are not allowed..
 
