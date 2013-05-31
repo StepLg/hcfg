@@ -1,0 +1,4 @@
+utf8 on on
+caption always
+caption string " %-w%{wb}%n %t%{-}%+w %=%c %m/%d "
+bind 'l' other
