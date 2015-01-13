@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo $* >> ~/packages.txt
+sudo apt-get install $*
+
